@@ -1,0 +1,50 @@
+[
+    {
+        "receipe_img": "eggplant.jpg",
+        "name": "Egg Plant",
+        "sub_name": "How to fry eggplant with less oil",
+        "receipe_video": "https://www.youtube.com/embed/68sRqDccoUA",
+        "description": "Eggplant is the best kind of vegetable, which is to say, a multi tasker that can take on many different forms. It’s as equally at home breaded and fried or, as it is here: roasted until it has a deliciously melted center. Topped with a rich miso dressing, this recipe works equally well as an appetizer course or as a side dish for salmon or chicken. Cooking tip: Watch the sesame seeds while you toast them in the skillet. They can quickly turn from perfectly toasted to burned.",
+        "recipe_link": "https://www.realsimple.com/food-recipes/browse-all-recipes/roasted-eggplant-with-miso-sesame-seeds"
+    },
+    {
+        "receipe_img": "Brisket.jpg",
+        "name": "Brisket",
+        "sub_name": "How to cook brisket - tips and recipes",
+        "receipe_video": "https://www.youtube.com/embed/K5rtd7GITlg",
+        "description": "Learn all about how to prepare brisket. Includes tested recipes,first cut vs. second cut, grass fed brisket, choosing the right weight, slicing and more!",
+        "recipe_link": "https://www.epicurious.com/recipes/food/views/brisket-with-pomegranate-walnut-sauce-and-pistachio-gremolata"
+    },
+    {
+        "receipe_img": "lemon-curd.jpg",
+        "name": "Lemon Curd",
+        "sub_name": "How to make easy blender lemon curd",
+        "receipe_video": "https://www.youtube.com/embed/CzaMGod6OmE",
+        "description": "Make Creamy, Sweet and Tart Lemon Curd Fast and Easy Using a Blender and Stovetop. Simple Foolproof Recipe",
+        "recipe_link": "https://sallysbakingaddiction.com/how-to-make-lemon-curd/"
+    },
+    {
+        "receipe_img": "latkes.jpg",
+        "name": "Latkes",
+        "sub_name": "How to make crispy perfect latkes every time",
+        "receipe_video": "https://www.youtube.com/embed/ygD55BgJieg",
+        "description": "Learn tips and tricks for making perfect latkes every time that are crispy outside, fluffy inside. Includes links to several tested latke recipes",
+        "recipe_link": "https://www.epicurious.com/recipes/food/views/potato-latkes-104406"
+    },
+    {
+        "receipe_img": "rosh-hashanah.jpg",
+        "name": "Rosh Hashanah",
+        "sub_name": "How to make Honey Cake Recipe for Rosh Hashanah",
+        "receipe_video": "https://www.youtube.com/embed/FCiX9RqTTOg",
+        "description": "A delicious collection of tried and true Rosh Hashanah kosher holiday recipes with reviews and step-by-step photo tutorials for a sweet new year!",
+        "recipe_link": "https://www.allwaysdelicious.com/rosh-hashanah-honey-cake/"
+    },
+    {
+        "receipe_img": "salmon.jpg",
+        "name": "Salmon",
+        "sub_name": "How to sear salmon fillets",
+        "receipe_video": "https://www.youtube.com/embed/TwTECqKNNmc",
+        "description": "Make restaurant-quality salmon in your own kitchen! Golden crust, moist & flaky within. Fast, easy tutorial, 20 minute meal, healthy & delicious.",
+        "recipe_link": "https://cafedelites.com/crispy-seared-lemon-garlic-herb-salmon/"
+    }
+]

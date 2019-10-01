@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.mat-form-field-flex {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color: #70534d !important;
+}
+
+.ngx-pagination a:hover,
+.ngx-pagination button:hover {
+    background: lightblue !important;
+}

@@ -1,0 +1,77 @@
+<div class="container">
+  <mat-grid-list class="body-header" [cols]="5" rowHeight="100px" (window:resize)="onResize($event)">
+    <mat-grid-tile>
+      <img class="logo" src="../../../assets/Images/Rlogo1.png" height="80" width="140">
+    </mat-grid-tile>
+    <mat-grid-tile id="search-grid">
+      <mat-form-field class="example-form-field">
+        <input matInput type="text" placeholder="Search Receipe" [(ngModel)]="value">
+        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon style="font-size: 180%; color: #70534d;">close</mat-icon>
+        </button>
+        <button mat-button *ngIf="!value" matSuffix mat-icon-button aria-label="Search">
+          <mat-icon style="font-size: 200%; color: #70534d;">search</mat-icon>
+        </button>
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+      <i title="Notifications" class="material-icons" style="font-size: 30px;color: #70534d;">
+        notifications
+      </i>
+      <i title="Favourites" class="material-icons" style="font-size: 30px;padding: 35px;color: #70534d;">
+        favorite
+      </i>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+  <mat-grid-list [cols]="breakpoint" rowHeight="520px" (window:resize)="onResize($event)">
+    <mat-grid-tile *ngFor="let recipe of filteredRecipes | paginate: { itemsPerPage: 3, currentPage: a , id: 'first'}">
+      <mat-card class="receipe-card" *ngIf="recipe.name">
+        <mat-card-header>
+          <div mat-card-avatar class="receipe-header-image"
+            [ngStyle]="{ 'background-image': 'url(../../../assets/Images/'+ recipe.receipe_img + ')'}"></div>
+          <mat-card-title>{{recipe.name}}</mat-card-title>
+          <mat-card-subtitle>{{recipe.sub_name}}</mat-card-subtitle>
+        </mat-card-header>
+        <iframe width="400" height="300" [src]="recipe.receipe_video | safe">
+        </iframe>
+        <mat-card-actions>
+          <mat-grid-list cols="2" rowHeight="40px" (window:resize)="onResize($event)">
+            <mat-grid-tile>
+              <i title="Like" id="green-{{recipe.name}}" class="material-icons default-class"
+                style="font-size: 30px;cursor:pointer;color: #70534d" (click)="onThumbup(recipe.name)">
+                thumb_up
+              </i>
+              <i title="Subscribe" id="yellow-{{recipe.name}}" class="material-icons"
+                style="font-size: 30px;padding: 20%;color: #70534d;cursor:pointer" (click)="onSubscribe(recipe.name)">
+                subscriptions
+              </i>
+              <i title="Dislike" id="red-{{recipe.name}}" class="material-icons"
+                style="font-size: 30px;color: #70534d;cursor:pointer" (click)="onThumbdown(recipe.name)">
+                thumb_down
+              </i>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <button class="btn orange" type="button" (click)="openRecipeDetails(recipe)"><span>{{recipe.name}}
+                  Recipe</span>
+              </button>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list cols="3" rowHeight="50px" (window:resize)="onResize($event)">
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+      <pagination-controls directionLinks="true" previousLabel="Previous" nextLabel="Next" class="my-pagination1"
+        (pageChange)="a = $event" id="first"></pagination-controls>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+  </mat-grid-list>
+
+</div>

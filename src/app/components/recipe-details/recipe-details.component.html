@@ -1,0 +1,17 @@
+<mat-dialog-content>
+  <div class="card" style="width: 96%;height:auto;margin-left: 2%;">
+    <div class="card-body">
+      <div class="card-text">
+        <div class="container">
+          <p>
+            {{recipeDetails.description}}
+          </p>
+          <a (click)="openLink(recipeDetails)">Please check recipe link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button class="mat-raised-button" id="close-button" (click)="close()">Close</button>
+</mat-dialog-actions>

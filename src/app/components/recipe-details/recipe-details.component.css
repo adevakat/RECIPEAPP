@@ -1,0 +1,49 @@
+::ng-deep .mat-dialog-container {
+    background: lightyellow;
+}
+
+.card {
+    background-color: grey;
+}
+
+.card-text {
+    background-color: lightblue;
+    padding: 1px;
+}
+
+.card-title {
+    margin-left: 1%;
+    color: white;
+}
+
+.card-body {
+    padding: 0.25rem;
+}
+
+.count {
+    font-size: 85%;
+}
+
+.label {
+    font-weight: bold;
+}
+
+#close-button {
+    background: grey;
+    color: #f1f1f1;
+}
+
+.mat-dialog-content {
+    padding: 0 10px;
+}
+
+.mat-dialog-actions {
+    padding: 0px 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 2px;
+}

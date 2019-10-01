@@ -1,0 +1,104 @@
+.receipe-card {
+    max-width: 420px;
+    background: lightblue;
+  }
+  
+.receipe-header-image {
+    background-size: cover;
+  }
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+::ng-deep #search-grid{
+    top: 15% !important;
+}
+mat-form-field {
+  width: 100%;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  border: none;
+  background:rgb(98, 176, 202)
+}
+.my-pagination1{
+    font-size: 15px;
+}
+.my-pagination1 /deep/ .ngx-pagination .current {
+    background:rgb(98, 176, 202);
+    color: black
+  }
+
+  .body-header{
+    background:rgb(98, 176, 202)
+  }
+
+
+  .btn {
+    position: relative;
+  
+    display: block;
+    margin: 0px auto;
+    padding: 0;
+  
+    overflow: hidden;
+  
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    color: #ecf0f1;
+    
+    transition: background-color .3s;
+  }
+  
+  .btn > * {
+    position: relative;
+  }
+  
+  .btn span {
+    display: block;
+    padding: 12px 24px;
+  }
+  
+  .btn:before {
+    content: "";
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    display: block;
+    width: 0;
+    padding-top: 0;
+      
+    border-radius: 100%;
+    
+    background-color: rgba(236, 240, 241, .3);
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn:active:before {
+    width: 120%;
+    padding-top: 120%;
+    
+    transition: width .2s ease-out, padding-top .2s ease-out;
+  }
+  
+  .btn.orange {
+    background-color: #e67e22;
+  }
+  
+  .btn.orange:hover, .btn.orange:focus {
+    background-color: #d35400;
+  }
+  ::ng-deep .modal-content {
+    position: relative;
+    top: 100px;
+}
